@@ -1,0 +1,29 @@
+$accent:#adebb3;
+
+#smallCont{
+    border-color: $accent;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 23px;
+    width: 8vw;
+    height: 6vh;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    transition: .9s;
+}
+
+#smallCont img{
+    justify-content: flex-start;
+    margin: 0.2vw;
+    width: 2.4vw;
+    margin-right: .9vw;
+}
+
+#smallCont p{
+    justify-content: flex-end;
+    color: #DDDDDD;
+    user-select: none;
+}
+
+#smallCont:hover{}

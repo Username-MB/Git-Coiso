@@ -1,0 +1,23 @@
+$accent:#adebb3;
+
+#botao{
+    margin: 10%;
+    padding-left: 1.39vw;
+    padding-right: 1.39vw;
+    padding-top: .4vw;
+    padding-bottom: .4vw;
+    font-size: 1.3vw;
+    background-color: rgba(255, 0, 0, 0);
+    border-color: $accent;
+    border-radius: 23px;
+    color: whitesmoke;
+    border-width: 1.5px;
+    border-style: solid;
+    transition: .9s;
+}
+
+#botao:hover{
+    background-color: $accent;
+    color: black;
+    border-color: black;
+}
