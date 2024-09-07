@@ -1,29 +1,37 @@
 $accent:#adebb3;
+$transparent:rgba(255, 0, 0, 0);
 
 #smallCont{
     border-color: $accent;
-    border-width: 1.5px;
+    border-width: 0.2em;
     border-style: solid;
-    border-radius: 23px;
-    width: 8vw;
+    border-radius: 70px;
+    width: 7.4vw;
     height: 6vh;
     background-color: rgba(255, 0, 0, 0);
     display: flex;
     align-items: center;
-    transition: .9s;
+    transition: .36s;
 }
 
 #smallCont img{
     justify-content: flex-start;
     margin: 0.2vw;
-    width: 2.4vw;
+    width: 2.2vw;
     margin-right: .9vw;
+    align-items: center;
 }
 
 #smallCont p{
     justify-content: flex-end;
     color: #DDDDDD;
     user-select: none;
+    align-items: center;
 }
 
-#smallCont:hover{}
+#smallCont:hover{
+    background-color: $accent;
+}
+#smallCont:hover p{
+    color: black;
+}

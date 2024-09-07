@@ -1,0 +1,83 @@
+
+
+$accent:#adebb3;
+$transparent:rgba(255, 0, 0, 0);
+
+:root{
+    --color:$accent;
+}
+#colorButton{
+    background-color: $accent;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 7;
+    position: fixed;
+    right: 0;
+    margin-top: 1em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .36s;
+}
+
+#colorButton img{
+    width: 2em;
+    height: 2em;
+    transition: .36s;
+}
+
+#colorButton:hover{
+    width: 4em;
+    height: 4em;
+}
+
+#colorButton:hover img{
+    width: 3em;
+    height: 3em;
+}
+
+#colorButtonPanel{
+    display: flex;
+    width: 30em;
+    height: 13em;
+    background-color:$accent;
+    color: white;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity .36s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fadeIn{
+    opacity: 1 !important;
+}
+
+#colorButtonPanel p{
+    color: #333333;
+    font-size: 1.3vw;
+    user-select: none;
+}
+#colorButtonPanel input{
+    border:none;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 0.2s;
+    border-radius: 25px;
+    font-size: 1.5em;
+    width: 5em;
+}
+#colorButtonPanel input:hover{
+    transform: scale(1.05)
+}
+#colorButtonPanel input:focus{
+    transform: scale(1.05);
+}
+#colorButtonPanel div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

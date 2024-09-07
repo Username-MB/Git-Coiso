@@ -1,0 +1,167 @@
+#botao {
+  margin: 5%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  font-size: 1.3vw;
+  background-color: rgba(255, 0, 0, 0);
+  border-color: #adebb3;
+  border-radius: 23px;
+  color: #333333;
+  border-width: 0.2em;
+  border-style: solid;
+  transition: 0.36s;
+  cursor: pointer;
+}
+
+#botao:hover {
+  background-color: #adebb3;
+  color: black;
+  border-color: black;
+}
+
+#title {
+  color: #DDDDDD;
+  font-weight: lighter;
+  font-size: 4.4vw;
+}
+
+#smallCont {
+  border-color: #adebb3;
+  border-width: 0.2em;
+  border-style: solid;
+  border-radius: 70px;
+  width: 7.4vw;
+  height: 6vh;
+  background-color: rgba(255, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  transition: 0.36s;
+}
+
+#smallCont img {
+  justify-content: flex-start;
+  margin: 0.2vw;
+  width: 2.2vw;
+  margin-right: 0.9vw;
+  align-items: center;
+}
+
+#smallCont p {
+  justify-content: flex-end;
+  color: #DDDDDD;
+  user-select: none;
+  align-items: center;
+}
+
+#smallCont:hover {
+  background-color: #adebb3;
+}
+
+#smallCont:hover p {
+  color: black;
+}
+
+:root {
+  --color:$accent;
+}
+
+#colorButton {
+  background-color: #adebb3;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 7;
+  position: fixed;
+  right: 0;
+  margin-top: 1em;
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.36s;
+}
+
+#colorButton img {
+  width: 2em;
+  height: 2em;
+  transition: 0.36s;
+}
+
+#colorButton:hover {
+  width: 4em;
+  height: 4em;
+}
+
+#colorButton:hover img {
+  width: 3em;
+  height: 3em;
+}
+
+#colorButtonPanel {
+  display: flex;
+  width: 30em;
+  height: 13em;
+  background-color: #adebb3;
+  color: white;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.36s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fadeIn {
+  opacity: 1 !important;
+}
+
+#colorButtonPanel p {
+  color: #333333;
+  font-size: 1.3vw;
+  user-select: none;
+}
+
+#colorButtonPanel input {
+  border: none;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  border-radius: 25px;
+  font-size: 1.5em;
+  width: 5em;
+}
+
+#colorButtonPanel input:hover {
+  transform: scale(1.05);
+}
+
+#colorButtonPanel input:focus {
+  transform: scale(1.05);
+}
+
+#colorButtonPanel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #222222;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#frostedGlassPanel {
+  width: 300px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3); /* Transparent white */
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Slight white border */
+  padding: 20px;
+  color: black; /* Text color inside */
+}
+
+/*# sourceMappingURL=sheets.css.map */
