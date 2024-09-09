@@ -1,7 +1,7 @@
-
-
+$bgColor:#222222;
 $accent:#adebb3;
 $transparent:rgba(255, 0, 0, 0);
+$textCol:#e6e6e6;
 
 :root{
     --color:$accent;
@@ -41,9 +41,9 @@ $transparent:rgba(255, 0, 0, 0);
 
 #colorButtonPanel{
     display: flex;
-    width: 30em;
+    width: 23em;
     height: 13em;
-    background-color:$accent;
+    background-color:$bgColor;
     color: white;
     border-radius: 25px;
     opacity: 0;
@@ -51,6 +51,9 @@ $transparent:rgba(255, 0, 0, 0);
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-width: .2em;
+    border-style: solid;
+    border-color: $accent;
 }
 
 .fadeIn{
@@ -58,13 +61,13 @@ $transparent:rgba(255, 0, 0, 0);
 }
 
 #colorButtonPanel p{
-    color: #333333;
-    font-size: 1.3vw;
+    color: $textCol;
+    font-size: 2em;
     user-select: none;
+    margin-bottom: -.1em;
 }
 #colorButtonPanel input{
     border:none;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
     transition: 0.2s;
     border-radius: 25px;
     font-size: 1.5em;
@@ -80,4 +83,11 @@ $transparent:rgba(255, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -1em;
+}
+#colorButtonPanel #botao{
+    color: $textCol;
+}
+#colorButtonPanel #botao:hover{
+    color: $bgColor;
 }

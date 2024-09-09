@@ -9,6 +9,7 @@ function showPanel() {
   // Create the paragraph
   const paragraph = document.createElement("p");
   paragraph.textContent = "Pick a Color";
+  paragraph.setAttribute("id", "title")
 
   // Create the input container div
   const inputContainer = document.createElement("div");
@@ -26,20 +27,22 @@ function showPanel() {
   setButton.textContent = "Set";
   setButton.onclick = setColor; // Assign setColor function to onclick event
 
-  // Append input and set button to the input container
-  inputContainer.appendChild(colorInput);
-  inputContainer.appendChild(setButton);
-
-  // Create the "Return to default" button
   const returnButton = document.createElement("button");
   returnButton.setAttribute("type", "button");
   returnButton.setAttribute("id", "botao");
   returnButton.textContent = "Return to default";
 
+  // Append input and set button to the input container
+  inputContainer.appendChild(colorInput);
+  inputContainer.appendChild(setButton);
+  inputContainer.appendChild(returnButton);
+  // Create the "Return to default" button
+  
+
   // Append the paragraph, input container, and return button to the main panel
   panel.appendChild(paragraph);
   panel.appendChild(inputContainer);
-  panel.appendChild(returnButton);
+  
 
   // Append the panel to the body (or any other container)
   document.body.appendChild(panel);

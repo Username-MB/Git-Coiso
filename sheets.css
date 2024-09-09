@@ -102,9 +102,9 @@
 
 #colorButtonPanel {
   display: flex;
-  width: 30em;
+  width: 23em;
   height: 13em;
-  background-color: #adebb3;
+  background-color: #222222;
   color: white;
   border-radius: 25px;
   opacity: 0;
@@ -112,6 +112,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-width: 0.2em;
+  border-style: solid;
+  border-color: #adebb3;
 }
 
 .fadeIn {
@@ -119,14 +122,14 @@
 }
 
 #colorButtonPanel p {
-  color: #333333;
-  font-size: 1.3vw;
+  color: #e6e6e6;
+  font-size: 2em;
   user-select: none;
+  margin-bottom: -0.1em;
 }
 
 #colorButtonPanel input {
   border: none;
-  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
   border-radius: 25px;
   font-size: 1.5em;
@@ -145,23 +148,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: -1em;
+}
+
+#colorButtonPanel #botao {
+  color: #e6e6e6;
+}
+
+#colorButtonPanel #botao:hover {
+  color: #222222;
 }
 
 body {
   background-color: #222222;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-#frostedGlassPanel {
-  width: 300px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.3); /* Transparent white */
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Slight white border */
-  padding: 20px;
-  color: black; /* Text color inside */
 }
 
 /*# sourceMappingURL=sheets.css.map */
